@@ -1,0 +1,517 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+img,
+samp,
+ol,
+ul,
+li,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 30%;
+  /* 10px/16px = 62.5% -> 1rem = 10px */
+}
+
+@media only screen and (min-width: 400px) {
+  html {
+    box-sizing: border-box;
+    font-size: 40%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  html {
+    box-sizing: border-box;
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MAIN CSS */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.first-section {
+  background-image: url("assets/hero-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav img,
+.fourth-section_footer img {
+  width: 43px;
+  height: auto;
+}
+
+nav.first-section_nav,
+nav.second-section_nav {
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.67;
+  letter-spacing: 1.2px;
+  color: #fefeff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+nav.first-section_nav ul,
+nav.second-section_nav ul {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-section li {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ffffff;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.hamburgers{
+  cursor: pointer;
+}
+
+.hamburgers.active + ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  position: absolute;
+  top: 90%;
+  right: 20px;
+}
+
+.second-section_nav .hamburgers.active + ul {
+  position: unset;
+  top: unset;
+  right: unset;
+}
+
+.hamburgers.active + ul li {
+  margin: 5px;
+}
+
+.burger {
+  width: 22px;
+  height: 2px;
+  margin: 2px;
+  background-color: #fefeff;
+}
+
+.first-section_heading {
+  font-family: "Gowun Dodum";
+  font-weight: normal;
+  line-height: 1.08;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 19rem 2rem 35.4rem 2rem;
+}
+
+.first-section_heading span:first-child {
+  font-size: 11.3rem;
+  letter-spacing: 1.13px;
+  color: #4d4d4d;
+}
+
+.first-section_heading span:last-child {
+  font-size: 12.2rem;
+  letter-spacing: 1.22px;
+  color: #414f6b;
+}
+
+.second-section_bg {
+  background-image: url("assets/peak.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.second-section_logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.second-section_logoWrapper h2 {
+  font-family: "Gowun Dodum";
+  font-weight: normal;
+  line-height: 1.1;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.second-section_logoWrapper span:first-child {
+  font-size: 20.5px;
+  letter-spacing: 0.21px;
+  color: #4d4d4d;
+}
+
+.second-section_logoWrapper span:last-child {
+  font-size: 22.5px;
+  letter-spacing: 0.23px;
+  color: #414f6b;
+}
+
+.second-section_nav li {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #414f6b;
+}
+
+nav.second-section_nav {
+  color: #414f6b;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.second-section_nav .burger-box {
+  background-color: #414f6b;
+}
+
+.second-section_text-container {
+  padding: 5.5rem 2rem 70.6rem 2rem;
+}
+
+.second-section_headerText-wrapper {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.second-section_number {
+  font-family: "Gowun Dodum";
+  font-size: 13.3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(65, 79, 107, 0.5);
+}
+
+.second-section_title {
+  font-family: "Gowun Dodum";
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #414f6b;
+  position: relative;
+  right: 2.2rem;
+  bottom: 2.9rem;
+}
+
+.second-section_desc {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.second-section_carousel-container {
+  padding-top: 25px;
+  padding-bottom: 35px;
+  background-color: rgba(65, 79, 107, 0.6);
+}
+
+.second-section_carousel {
+  width: 220px;
+  height: auto;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  width: 220px !important;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.second-section_carousels {
+  max-width: 920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.second-section_carousels .slick-list {
+  padding-left: 0px !important;
+  padding-right: calc(100% - 230px) !important;
+}
+
+.second-section.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.second-section_carousels .slick-slide.slick-center {
+  margin-left: 10px;
+}
+.second-section_carousels .slick-dots li button::before {
+  color: black;
+}
+.second-section_carousels .slick-dots li.slick-active button::before {
+  color: black;
+}
+
+.third-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem 2.6rem 2rem;
+  max-width: 86.1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fourth-section_nav {
+  background-color: #414f6b;
+  height: 40px;
+}
+.fourth-section_nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.fourth-section_nav li {
+  font-family: "Gowun Dodum";
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #b0b4be;
+  padding: 0px 23px;
+}
+
+.fourth-section_nav li.active {
+  background-color: #b0b4be;
+  color: #414f6b;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fourth-section_nav li.active::after {
+  content: "";
+  display: block;
+  border: 1px solid #414f6b;
+}
+
+.fourth-section_mountain-1 {
+  background-image: url("assets/mountain-1.png");
+  background-repeat: no-repeat;
+  height: 620px;
+  display: none;
+  background-size: cover;
+}
+
+.fourth-section_mountain-2 {
+  background-image: url("assets/mountain-2.png");
+  background-repeat: no-repeat;
+  height: 620px;
+  display: none;
+  background-size: cover;
+}
+
+.fourth-section_mountain-1.active,
+.fourth-section_mountain-2.active {
+  display: block;
+  padding: 10.1rem 0px;
+}
+
+.mountain_schedule-box {
+  max-width: 352px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 21px 41px 27px 39px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-box_title {
+  font-family: "Gowun Dodum";
+  font-size: 31.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #414f6b;
+  margin-bottom: 19px;
+}
+
+.schedule-box_table-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-box_table-row h2 {
+  font-family: "Gowun Dodum";
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.fourth-section_footer {
+  background-color: #414f6b;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.fourth-section_footer img {
+  mix-blend-mode: multiply;
+}
+
+.fourth-section_footer .second-section_logoWrapper span:first-child,
+.fourth-section_footer .second-section_logoWrapper span:last-child {
+  color: #63769d;
+}
+
+.footer-copyright {
+  font-family: "Gowun Dodum";
+  font-size: 12px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: 1.67;
+  letter-spacing: 1.2px;
+  text-align: left;
+  color: #63769d;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+  .burger-boxes {
+    display: none;
+  }
+  nav.first-section_nav ul,
+  nav.first-section_nav ul {
+    display: flex;
+    width: 192px;
+  }
+
+  .second-section_desc {
+    margin-left: 6.7rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  nav.first-section_nav,
+  nav.second-section_nav {
+    padding-left: 21.4%;
+    padding-right: 20.4%;
+  }
+
+  .second-section_text-container {
+    padding-left: 20.4%;
+    padding-right: 24.5%;
+  }
+
+  .third-section {
+    flex-direction: row;
+    align-items: center;
+  }
+  .third-section .second-section_desc {
+    margin-left: 3.1rem;
+  }
+
+  .fourth-section_nav ul {
+    justify-content: flex-start;
+    padding-left: 20%;
+  }
+
+  .mountain_schedule-box {
+    margin-left: 22%;
+  }
+
+  .fourth-section_footer {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 20vw;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .footer-copyright {
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .first-section_heading {
+    text-align: left;
+    padding-left: 25.8%;
+  }
+
+  .first-section_footer {
+    grid-gap: 40vw;
+  }
+}
